@@ -1,0 +1,159 @@
+  <html><head>
+  <meta charset="utf-8"/>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B600%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+  <title>Viplora Tech</title>
+  <link href="Logo.png" rel="icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>/* General styling for the social media link container */
+  .social-link {
+    display: flex; /* Makes the icon and text align horizontally */
+    align-items: center; /* Vertically aligns the items in the center */
+    gap: 1rem; /* Creates space between the icon and the text */
+    margin-bottom: 1rem; /* Adds space below each link */
+    text-decoration: none; /* Removes the default underline from the link */
+  }
+
+  /* Style for the text */
+  .social-link p {
+    margin: 0; /* Resets any default margin on the paragraph tag */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #333; /* A dark gray for good readability */
+  }
+
+  /* Color definitions for each platform using their brand colors */
+  .instagram .social-icon {
+    color: #C13584; /* Instagram's iconic magenta */
+  }
+
+  .twitter .social-icon {
+    color: #1DA1F2; /* Twitter's classic blue */
+  }
+
+  .linkedin .social-icon {
+    color: #0A66C2; /* LinkedIn's corporate blue */
+  }
+
+  /* Optional: Add a subtle hover effect for interactivity */
+  .social-link:hover .social-icon,
+  .social-link:hover p {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }</style>
+  </head>
+  <body class="bg-gray-50">
+  <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+  <div class="layout-container flex h-full grow flex-col">
+  <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-10 py-5">
+  <div class="flex items-center gap-3 text-zinc-900">
+    <img src="Logo2.png" alt="Viplora Logo" class="h-8 w-8">
+    <h2 class="text-zinc-900 text-xl font-bold leading-tight tracking-tighter">
+      Viplora Tech
+    </h2>
+  </div>
+
+    
+  <div class="flex flex-1 justify-end items-center gap-8">
+  <nav class="hidden md:flex items-center gap-8">
+  <a class="text-zinc-600 hover:text-zinc-900 text-base font-medium leading-normal transition-colors" href="landing.html">Home</a>
+  <a class="text-zinc-600 hover:text-zinc-900 text-base font-medium leading-normal transition-colors" href="service.html">Services</a>
+  <a class="text-zinc-600 hover:text-zinc-900 text-base font-medium leading-normal transition-colors" href="about.html">About</a>
+  <a class="text-zinc-600 hover:text-zinc-900 text-base font-medium leading-normal transition-colors" href="contact.html">Contact</a>
+  </nav>
+  <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-11 px-6 bg-[#ea2a33] text-white text-base font-bold leading-normal tracking-wide hover:bg-red-700 transition-colors shadow-sm">
+  <span class="truncate">Get Started</span>
+  </button>
+  </div>
+  </header>
+  <main class="flex-1">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-2">
+  <div class="flex flex-col">
+  <div class="mb-8">
+  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Get in Touch</h1>
+  <p class="mt-4 text-lg text-gray-600">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+  </div>
+  <form class="space-y-6">
+  <div>
+  <label class="sr-only" for="name">Your Name</label>
+  <input class="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-[#ea2a33] focus:ring-[#ea2a33] placeholder:text-gray-400" id="name" name="name" placeholder="Your Name" type="text"/>
+  </div>
+  <div>
+  <label class="sr-only" for="email">Your Email</label>
+  <input class="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-[#ea2a33] focus:ring-[#ea2a33] placeholder:text-gray-400" id="email" name="email" placeholder="Your Email" type="email"/>
+  </div>
+  <div>
+  <label class="sr-only" for="subject">Subject</label>
+  <input class="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-[#ea2a33] focus:ring-[#ea2a33] placeholder:text-gray-400" id="subject" name="subject" placeholder="Subject" type="text"/>
+  </div>
+  <div>
+  <label class="sr-only" for="message">Your Message</label>
+  <textarea class="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-[#ea2a33] focus:ring-[#ea2a33] placeholder:text-gray-400" id="message" name="message" placeholder="Your Message" rows="6"></textarea>
+  </div>
+  <div>
+  <button class="flex w-full justify-center rounded-md bg-[#ea2a33] px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#d0262c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ea2a33] transition-colors duration-300" type="submit">
+                        Send Message
+                      </button>
+  </div>
+  </form>
+  </div>
+  <div class="flex flex-col">
+  <div class="space-y-8">
+  <div>
+  <h2 class="text-2xl font-bold text-gray-900">Contact Information</h2>
+  <div class="mt-4 space-y-4 text-gray-600">
+
+  <div class="flex items-start gap-4">
+  <span class="material-symbols-outlined mt-1 text-[#ea2a33]">call</span>
+  <p>(+91) 7620837934 , (+91) 7559422045</p>
+  </div>
+  <div class="flex items-start gap-4">
+  <span class="material-symbols-outlined mt-1 text-[#ea2666]">email</span>
+  <p>viploratech@gmail.com</p>
+  </div>
+  <a href=" https://www.instagram.com/viploratech" class="social-link instagram">
+    <span class="material-symbols-outlined social-icon">camera_alt</span>
+    <p>Instagram</p>
+  </a>
+
+  <a href=" https://x.com/ViploraTech" class="social-link twitter">
+    <span class="material-symbols-outlined social-icon">alternate_email</span>
+    <p>X(twitter)</p>
+  </a>
+
+  <a href="https://www.linkedin.com/company/viploratech/" class="social-link linkedin">
+    <span class="material-symbols-outlined social-icon">business</span>
+    <p>Linkedin</p>
+  </a>
+  </div>
+  </div>
+  <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg shadow-lg">
+  <div class="h-full w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBS_D2NP53ZI7pK-8mn_9-CYn8AHdQoBZoYtkG4YAgHIoM1l9acqVYNu4w8ggCZ-TpYhOxeOE0X6_O7LUby5JUNtBEbM1ETNxTOc9ayv2U6VOP8I19uGTxH8I9cMOqnyuo52IQzDrbBdUkjSCWF1UTXy0N65YBRWSX_HfZsXW2eBFhcxTgISRTB1QsbzTEksuIwBZ2PWj5HOooFNietjKRKaGlzUkmwmee5dE3e5oR5bTHEKDkLmdMT4QWTBxMn15KXZ-p31bS1P1o");'></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </main>
+  <footer class="bg-slate-800 text-slate-400">
+  <div class="container mx-auto px-4 py-8 md:px-6">
+  <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+  <div class="flex items-center gap-3">
+  <img src="Logo2.jpg" alt="Viplora Logo" class="h-8 w-8">
+  <span class="text-lg font-semibold text-white">Viplora Tech</span>
+  </div>
+  <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+  <a class="text-base hover:text-white" href="#">Privacy Policy</a>
+  <a class="text-base hover:text-white" href="#">Terms of Service</a>
+  </div>
+  </div>
+  <div class="mt-6 border-t border-slate-700 pt-6 text-center text-sm">
+  <p>© 2025 Viplora Tech. All rights reserved.</p>
+  </div>
+  </div></footer>
+  </div>
+  </div>
+
+  </body></html>
